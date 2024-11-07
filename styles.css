@@ -1,0 +1,95 @@
+:root {
+    --fontCoustard: "Coustard", serif;
+    --mainColorGreen:  rgb(76, 109, 15);
+    --mainColorOrange : rgb(255, 151, 55);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: whitesmoke ;
+    min-height: 100vh;
+   }
+
+/* Navigation section */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    background-color:  var(--mainColorGreen);
+    width: 100vw;
+    height: 10%;
+    border-bottom-style: solid;
+    border-color: rgb(58, 83, 11);
+    box-shadow: 1px 10px 20px rgb(58, 83, 11, 0.5);
+    position: relative;
+
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    padding: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 70px;
+    font-family: var(--fontCoustard);
+    font-size: 0.8rem;
+
+}
+
+.nav-link:hover {
+    color: var(--mainColorOrange);
+}
+
+#CV {
+   width: 100px;
+   border-color: var(--mainColorOrange);
+    background-color: var(--mainColorOrange);
+    color: whitesmoke;
+}
+
+#CV:hover {
+    background-color: rgb(255, 136, 0);
+    color: black;
+}
+
+/* About me section  */
+
+.aboutMe {
+    background-color: var(--mainColorGreen);
+    height: 700px;
+    width: 100vw;
+    display: flex;
+}
+
+.nameSurname {
+   margin-top: 50px;
+
+}
+
+.name {
+    color: white;
+    font-family: var(--fontCoustard);
+    font-size: 4rem;
+    
+}
+
+.surname {
+    color: white;
+    font-family: var(--fontCoustard);
+    font-size: 4rem;
+    margin-left: auto;
+   
+}
+
+.greeting1 {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
