@@ -123,23 +123,24 @@ body {
     background-color: rgb(255, 44, 44);
     box-shadow: 10px 10px 20px rgb(44, 63, 8);
     height: 100px;
-    width: 400px;
+    width: 300px;
     z-index: 10;
-    right: 100px;
+    right: 120px;
     top: 500px;
+    padding: 10px;
 }
 
 .quotedWords {
     margin: 10px;
     color: var(--mainColorWhite);
     font-family: cursive;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* 
 This handles the little paragraphs on the page  */
 .aboutMeRight {
-    margin-left: 180px;
+    margin-left: 120px;
 }
 
 .nameTitle {
@@ -214,7 +215,7 @@ This handles the little paragraphs on the page  */
 .skill-details {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(auto-fit, 450px);
+    grid-template-rows: repeat(auto-fit, 500px);
     margin-left: 60px;
     margin-right: 40px; 
     margin-bottom: 100px;
@@ -222,7 +223,7 @@ This handles the little paragraphs on the page  */
 }
 
 .skill {
-    width: 400px;
+    width: 350px;
     margin-bottom: 50px;
     border-radius: 20px;
     padding: 40px;
@@ -232,7 +233,7 @@ This handles the little paragraphs on the page  */
 }
 
 .skill h3 {
-   font-size: 2rem;
+   font-size: 1.5rem;
    font-weight: 900;
 }
 
@@ -240,3 +241,10 @@ This handles the little paragraphs on the page  */
     font-size: 1.2rem;
     font-weight: 300;
 }
+
+
+ /* projects section */
+
+ #projects {
+    background-image: ;
+ }
