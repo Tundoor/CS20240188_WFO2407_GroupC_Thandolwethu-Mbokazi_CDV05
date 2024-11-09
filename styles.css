@@ -100,37 +100,24 @@ body {
 .name {
     color: var(--mainColorWhite);
     font-family: var(--fontCoustard);
-    font-size: 4em;
-    margin-bottom: -40px;
+    font-size: 3rem;
     margin-top: 100px;
     font-weight: 500px;
     z-index: 10;
-    width: 800px;
     text-decoration: underline;
 }
 
-.pictureDiv {
-    max-width: 100%;
-    margin: auto;
-    margin-right: 350px;
+.surname {
+    color: var(--mainColorWhite);
+    font-family: var(--fontCoustard);
+    font-size: 3rem;
+    font-weight: 500px;
+    margin-top: -30px;
+    z-index: 10;
+    text-decoration: underline;
 }
 
-
-.profilePic {
-    max-width: 100%;
-    width: 400px;
-    height: 500px;
-    max-width: 100%;
-    border-style: solid;
-    border-color: var(--mainColorOrange);
-    border-width: 5px;
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
-    box-shadow: 10px 10px 20px rgb(44, 63, 8);
-}
-
-/* Quote that I follow */
-
+  /* quoted words  */
 .Quote {
     position: absolute;
     background-color: rgb(255, 44, 44);
@@ -138,8 +125,8 @@ body {
     height: 100px;
     width: 400px;
     z-index: 10;
-    right: 150px;
-    top: 550px;
+    right: 100px;
+    top: 500px;
 }
 
 .quotedWords {
@@ -152,27 +139,49 @@ body {
 /* 
 This handles the little paragraphs on the page  */
 .aboutMeRight {
-    margin-left: 250px;
+    margin-left: 180px;
 }
 
 .nameTitle {
     font-family: var(--fontCoustard);
     color: var(--mainColorOrange);
-    font-size: 2em;
-
+    font-size: 1.5em;
 }
 
 .nameParagraph {
     font-family: var(--fontCoustard);
-    font-size: 1.2em;
+    font-size: 1.0em;
     color: var(--mainColorWhite);
-    width: 600px;
+    width: 400px;
 }
 
 .jobTitles {
-    font-size: 2em;
+    font-size: 1.5em;
     color: var(--mainColorOrange);
 }
+
+.pictureDiv {
+    max-width: 100%;
+    margin: auto;
+    margin-right: 250px;
+}
+
+
+.profilePic {
+    max-width: 100%;
+    width:  300px;
+    height: 400px;
+    max-width: 100%;
+    border-style: solid;
+    border-color: var(--mainColorOrange);
+    border-width: 5px;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    box-shadow: 10px 10px 20px rgb(44, 63, 8);
+}
+
+
+
 
 
 
