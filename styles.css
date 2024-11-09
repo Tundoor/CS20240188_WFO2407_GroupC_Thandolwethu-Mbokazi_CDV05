@@ -180,11 +180,6 @@ This handles the little paragraphs on the page  */
     box-shadow: 10px 10px 20px rgb(44, 63, 8);
 }
 
-
-
-
-
-
 /* skills section  */
 
 .skill-Intro {
@@ -205,4 +200,43 @@ This handles the little paragraphs on the page  */
     margin-right: auto;
 }
 
+.skill-paragraph {
+    font-family: var(--fontCoustard);
+    color: var(--mainColorBlack);
+    
+    font-size: 1.2rem;
+    margin-top: -30px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
 
+  /* Divs for the different skills */
+.skill-details {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto-fit, 450px);
+    margin-left: 60px;
+    margin-right: 40px; 
+    margin-bottom: 100px;
+    gap: 5px;  
+}
+
+.skill {
+    width: 400px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 40px;
+    padding-top: 50px;
+    background-color: var(--mainColorGreen);
+    box-shadow: 5px 10px 10px rgb(44, 63, 8);
+}
+
+.skill h3 {
+   font-size: 2rem;
+   font-weight: 900;
+}
+
+.skill p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
