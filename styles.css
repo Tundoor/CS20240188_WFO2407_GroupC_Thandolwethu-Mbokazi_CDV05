@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: var(--mainColorWhite);
@@ -24,7 +28,10 @@ body {
 .nav-bar {
     display: flex;
     flex-direction: row;
-    position: relative;
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Ensure it stays at the top */
+    left: 0; /* Align it to the left side of the page */
+    right: 0;
     background-color: var(--mainColorGreen);
     width: 100vw;
     height: 70px;
@@ -32,6 +39,7 @@ body {
     border-color: rgb(58, 83, 11);
     box-shadow: 1px 10px 20px rgb(84, 90, 72);
     z-index: 10;
+   
 
 }
 
@@ -124,7 +132,7 @@ body {
     box-shadow: 10px 10px 20px rgb(44, 63, 8);
     height: 100px;
     width: 300px;
-    z-index: 10;
+    z-index: 9;
     right: 120px;
     top: 500px;
     padding: 10px;
@@ -268,10 +276,13 @@ This handles the little paragraphs on the page  */
  }
 
  .project-Desc {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--mainColorWhite);
  }
  
+ .gitHubRepo {
+    color: var(--mainColorWhite);
+ }
  /* Carousel */
 
 .carousel {
@@ -282,6 +293,9 @@ This handles the little paragraphs on the page  */
     margin-left: auto;
     margin-right: auto;
     list-style: none;
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--mainColorOrange);
 }
 
   /* Makes other imgs not show */
@@ -313,7 +327,7 @@ This handles the little paragraphs on the page  */
     background-color: rgb(0, 0, 1, .1);
     font-size: 4em;
     top: 50%;
-    z-index: 10;
+    z-index: 9;
     color: var(--mainColorOrange);
     cursor: pointer;
     border: none;
