@@ -28,9 +28,12 @@ body {
 .nav-bar {
     display: flex;
     flex-direction: row;
-    position: fixed; /* Make the navbar fixed */
-    top: 0; /* Ensure it stays at the top */
-    left: 0; /* Align it to the left side of the page */
+    position: fixed;
+    /* Make the navbar fixed */
+    top: 0;
+    /* Ensure it stays at the top */
+    left: 0;
+    /* Align it to the left side of the page */
     right: 0;
     background-color: var(--mainColorGreen);
     width: 100vw;
@@ -39,7 +42,7 @@ body {
     border-color: rgb(58, 83, 11);
     box-shadow: 1px 10px 20px rgb(84, 90, 72);
     z-index: 10;
-   
+
 
 }
 
@@ -81,7 +84,9 @@ body {
 
 #CV {
     width: 100px;
+    height: 70px;
     margin-right: 15px;
+    font-size: 1.5rem;
     font-family: var(--fontCoustard);
     border-color: var(--mainColorOrange);
     background-color: var(--mainColorOrange);
@@ -104,6 +109,7 @@ body {
     display: flex;
 
 }
+
 .name {
     color: var(--mainColorWhite);
     font-family: var(--fontCoustard);
@@ -124,7 +130,7 @@ body {
     text-decoration: underline;
 }
 
-  /* quoted words  */
+/* quoted words  */
 .Quote {
     position: absolute;
     background-color: rgb(255, 44, 44);
@@ -172,13 +178,13 @@ This handles the little paragraphs on the page  */
 .pictureDiv {
     max-width: 100%;
     margin: auto;
-    margin-right: 250px;
+    margin-right: 200px;
 }
 
 
 .profilePic {
     max-width: 100%;
-    width:  300px;
+    width: 350px;
     height: 400px;
     max-width: 100%;
     border-style: solid;
@@ -218,15 +224,15 @@ This handles the little paragraphs on the page  */
     margin-bottom: 100px;
 }
 
-  /* Divs for the different skills */
+/* Divs for the different skills */
 .skill-details {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto-fit, 500px);
     margin-left: 60px;
-    margin-right: 40px; 
+    margin-right: 40px;
     margin-bottom: 100px;
-    gap: 5px;  
+    gap: 5px;
 }
 
 .skill {
@@ -240,10 +246,10 @@ This handles the little paragraphs on the page  */
 }
 
 .skill h3 {
-   font-size: 1.5rem;
-   font-weight: 900;
-   font-family: var(--fontCoustard);
-   color: var(--mainColorOrange);
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: var(--fontCoustard);
+    color: var(--mainColorOrange);
 }
 
 .skill p {
@@ -253,37 +259,38 @@ This handles the little paragraphs on the page  */
 }
 
 
- /* projects section */
+/* projects section */
 
- #projects {
+#projects {
     background-color: var(--mainColorGreen);
     height: 1000px;
     width: 100vw;
- }
+}
 
- .project-Info {
+.project-Info {
     display: flex;
     flex-direction: column;
     align-items: center;
- }
+}
 
- .project-Title {
+.project-Title {
     font-family: var(--fontCoustard);
     color: var(--mainColorOrange);
     font-size: 4rem;
     margin-top: 80px;
     margin-bottom: 0px;
- }
+}
 
- .project-Desc {
+.project-Desc {
     font-size: 2rem;
     color: var(--mainColorWhite);
- }
- 
- .gitHubRepo {
+}
+
+.gitHubRepo {
     color: var(--mainColorWhite);
- }
- /* Carousel */
+}
+
+/* Carousel */
 
 .carousel {
     height: 600px;
@@ -298,7 +305,7 @@ This handles the little paragraphs on the page  */
     border-color: var(--mainColorOrange);
 }
 
-  /* Makes other imgs not show */
+/* Makes other imgs not show */
 .slide {
     position: absolute;
     inset: 0;
@@ -349,6 +356,7 @@ This handles the little paragraphs on the page  */
 .next {
     left: 1rem;
 }
+
 .prev {
     right: 1rem;
 }
@@ -381,7 +389,7 @@ footer {
 .footer__link:hover,
 .social-list__link:hover {
     opacity: .7;
- 
+
 }
 
 .footer__link:hover {
@@ -390,15 +398,15 @@ footer {
 
 
 .social-list {
-       color: #55692d;
-       list-style: none;
-       display: flex;
-       justify-content: center;
-       margin: 2.5em;
-       padding: 0;
+    color: #55692d;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2.5em;
+    padding: 0;
 }
 
-.social-list__item{
+.social-list__item {
     margin: 0 .5em;
 }
 
@@ -406,23 +414,40 @@ footer {
     padding: .5em;
 }
 
-@media  screen and (max-width: 700px) {
-     body {
+.cvSmall {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger-modal {
+    display: none;
+}
+
+.nav_link {
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    body {
         max-width: 100vw;
-     }
-   
-   
+    }
+
+
     .nav-bar {
-        width: 100%;
+        width: 100vw;
         height: 50px;
     }
-   
+
     .Brand {
         display: none;
     }
 
     .nav-link {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: auto;
@@ -435,115 +460,248 @@ footer {
         width: 0;
         padding: 0;
     }
-    
+
     .aboutMe {
         background-color: var(--mainColorGreen);
         position: relative;
-        height: 700px;
+        height: 600px;
         width: 100vw;
         display: flex;
-    
+        overflow: hidden;
+
     }
 
     .name {
-    font-size: 2rem;
-    margin-top: 100px;
+        font-size: 2.5rem;
+        margin-top: 100px;
+        padding-left: 20px;
     }
 
-    .surname{
-         font-size: 2rem;
+    .surname {
+        font-size: 2.5rem;
+        padding-left: 20px;
     }
 
     .aboutMeRight {
-        margin-left: 20px;
+        margin: 0;
+
     }
-    
+
     .nameTitle {
         font-family: var(--fontCoustard);
         color: var(--mainColorOrange);
-        font-size: 1.5em;
+        font-size: 1.2em;
+        padding-left: 20px;
     }
-    
+
     .nameParagraph {
         font-family: var(--fontCoustard);
-        font-size: 1.0em;
+        font-size: 1.2em;
         color: var(--mainColorWhite);
-        width: 400px;
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 30px;
+
     }
-    
+
     .jobTitles {
-        font-size: 1em;
+        font-size: 1.2em;
         color: var(--mainColorOrange);
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 10px;
     }
-  
-    
 
 
-    .Quote{
-       display: none;}
 
-     .pictureDiv{
+
+    .Quote {
         display: none;
-     }
+    }
 
-     .profilePic {
+    .pictureDiv {
         display: none;
-     }
+    }
 
-     
-   .skill-Intro {
-    width: 300px;
-    margin-top: 50px;
-   }
-   
-     .skill-details {
-        grid-template-columns: none;
-        grid-template-rows: repeat(auto-fit, 300px);
-        margin-left: 20px;
-        margin-right: 20px; 
-        width: 100px;
-     }
-     
-     
-.skill-paragraph {
-    font-family: var(--fontCoustard);
-    color: var(--mainColorBlack);
-    font-size: 0.8rem;
-    margin-top: -30px;
-    margin-left: 30px;
-    margin-bottom: 80px;
-}
-      
-.skill-title {
-    font-size: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-     .skill h3 {
-        font-size: 1rem;
+    .profilePic {
+        display: none;
+    }
+
+
+    .skill-Intro {
+        width: 300px;
+        margin-top: 50px;
+
+    }
+
+    .skill-details {
+        gap: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 90vw;
+        margin-left: 0;
+    }
+
+    .skill-paragraph {
+        font-family: var(--fontCoustard);
+        color: var(--mainColorBlack);
+        font-size: 1.2rem;
+        margin-top: -30px;
+        margin-left: 30px;
+        margin-bottom: 80px;
+    }
+
+    .skill-title {
+        font-size: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skill h3 {
+        font-size: 2rem;
         font-weight: 900;
-     }
-     
-     .skill p {
-         font-size: 0.8rem;
-         font-weight: 300;
-     }
+    }
 
-     .project-Title {
+    .skill p {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .project-Title {
         font-size: 3rem;
         margin-top: 80px;
         margin-bottom: 0px;
-     }
-    
-     .project-Desc {
+    }
+
+    .project-Desc {
         font-size: 1rem;
         color: var(--mainColorWhite);
-     }
-    
-     .carousel {
+    }
+
+    .carousel {
         height: 600px;
-        width: 400px;
+        width: 100vw;
+    }
+
+    svg {
+        width: 50px;
+    }
+
+    .social-list {
+        margin: 0;
+    }
+
+    .cvSmall {
+        display: block;
+        width: 120px;
+        height: 50px;
+        font-family: var(--fontCoustard);
+        border-color: var(--mainColorOrange);
+        background-color: var(--mainColorOrange);
+        color: var(--mainColorWhite);
+        position: relative;
+        top: 200px;
+        right: 200px;
+
+
     }
 }
 
-      
+@media screen and (max-width: 500px) {
+
+    .cvSmall {
+        display: none;
+    }
+
+    .nav-bar {
+        justify-content: end;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .hamburger {
+        display: block;
+        margin-top: 5px;
+        fill: var(--mainColorOrange);
+    }
+
+    .aboutMe {
+        height: 650px;
+    }
+
+    .name {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .surname {
+        font-size: 2rem;
+    }
+
+    .nameTitle {
+        font-size: 1.2rem;
+    }
+
+    .nameParagraph {
+        font-size: 1rem;
+    }
+
+    .carousel-button {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+
+
+    .skill h3 {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+    .skill p {
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+
+
+    .hamburger-modal {
+        display: none;
+        height: 400px;
+        width: 300px;
+        background-color: var(--mainColorOrange);
+        overflow: hidden;
+
+    }
+
+    .hamLinks {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .nav_link {
+        display: block;
+        padding-left: 20px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: var(--mainColorWhite);
+    }
+
+    .nav_link:hover {
+        color: #55692d;
+        text-decoration: underline;
+    }
+
+
+
+
+
+}

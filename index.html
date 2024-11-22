@@ -39,16 +39,45 @@
          <a href="#contactMe" class="nav-link">
             <h1>Contact</h1>
          </a>
+
          <a href="https://docs.google.com/document/d/1HE5MsPX7Q8ikRNckXLktjGSUvHZDW9fFU1usBjt2zUw/edit?usp=sharing"
             target="_blank" class="nav-link">
-            <button id="CV">
-               <h1>CV</h1>
-            </button> </a>
+            <button id="CV">CV </button> </a>
+
+      </div>
+      <!--Hamburger-->
+      <div class="hamburger">
+         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 24 24">
+            <path d="M2 11H22V13H2zM2 5H22V7H2zM2 17H22V19H2z"></path>
+         </svg>
       </div>
 
+      <div class="hamburger-modal">
+         <div class="hamLinks"><a href="#aboutMe" class="nav_link">
+               <h1>About Me</h1>
+            </a>
+            <a href="#skills" class="nav_link">
+               <h1>Skills</h1>
+            </a>
+            <a href="#projects" class="nav_link">
+               <h1>Projects</h1>
+            </a>
+            <a href="#contactMe" class="nav_link">
+               <h1>Contact</h1>
+            </a>
+
+            <a href="https://docs.google.com/document/d/1HE5MsPX7Q8ikRNckXLktjGSUvHZDW9fFU1usBjt2zUw/edit?usp=sharing"
+               target="_blank" class="nav_link">
+               <h1>CV</h1>
+            </a>
+         </div>
+
+
+      </div>
    </nav>
 
    <div>
+
       <!-- About me section  -->
       <div id="aboutMe" class="aboutMe">
 
@@ -63,6 +92,7 @@
                My journey with coding has definitely been challenging but I wouldn't want it any other way. </p>
 
             <h2 class="jobTitles">Web Developer || Web Designer || Front-End Developer</h2>
+
          </div>
 
          <div class="pictureDiv">
@@ -76,6 +106,12 @@
                — Eleanor Roosevelt</p>
          </div>
 
+         <!-- button for cv for smaller screen sizes  -->
+         <a href="https://docs.google.com/document/d/1HE5MsPX7Q8ikRNckXLktjGSUvHZDW9fFU1usBjt2zUw/edit?usp=sharing"
+            target="_blank" class="nav-link">
+            <button class="cvSmall">
+               CV
+            </button> </a>
 
       </div>
 
@@ -169,28 +205,28 @@
          <div class="project-Info">
             <h1 class="project-Title">Projects</h1>
             <p class="project-Desc">Selection of my <a href="https://github.com/Tundoor" class="gitHubRepo">work</a></p>
-      
+
          </div>
-      <section>
-         <div class="carousel" id="carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">&#8658;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8656;</button>
-            <ul data-slides>
-               <li class="slide" data-active>
-                  <img src="./imgs/portfolio-03.png">
-               </li>
-               <li class="slide">
-                  <img src="./imgs/portfolio-05.png">
-               </li>
-               <li class="slide">
-                  <img src="./imgs/Screenshot 2024-09-18 221158.png">
-               </li>
-               <li class="slide">
-                  <img src="./imgs/Screenshot 2024-11-09 193558.png">
-               </li>
-            </ul>
-         </div>
-      </section>
+         <section>
+            <div class="carousel" id="carousel" data-carousel>
+               <button class="carousel-button prev" data-carousel-button="prev">&#8658;</button>
+               <button class="carousel-button next" data-carousel-button="next">&#8656;</button>
+               <ul data-slides>
+                  <li class="slide" data-active>
+                     <img src="./imgs/portfolio-03.png">
+                  </li>
+                  <li class="slide">
+                     <img src="./imgs/portfolio-05.png">
+                  </li>
+                  <li class="slide">
+                     <img src="./imgs/Screenshot 2024-09-18 221158.png">
+                  </li>
+                  <li class="slide">
+                     <img src="./imgs/Screenshot 2024-11-09 193558.png">
+                  </li>
+               </ul>
+            </div>
+         </section>
       </div>
 
       <!-- Contact Me Section -->
@@ -217,7 +253,8 @@
             </li>
             <!--linkedIn-->
             <li class="social-list__item">
-               <a class="social-list__link" href="https://www.linkedin.com/in/thandolwethu-mbokazi-9bb309287/" target="_blank">
+               <a class="social-list__link" href="https://www.linkedin.com/in/thandolwethu-mbokazi-9bb309287/"
+                  target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
                      <path fill="#0288D1"
                         d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
