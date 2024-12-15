@@ -270,7 +270,6 @@ This handles the little paragraphs on the page  */
 
 #projects {
     background-color: var(--mainColorGreen);
-    height: 1000px;
     width: 100vw;
 }
 
@@ -296,6 +295,7 @@ This handles the little paragraphs on the page  */
 .gitHubRepo {
     color: var(--mainColorWhite);
 }
+
 
 /* footer section  */
 
