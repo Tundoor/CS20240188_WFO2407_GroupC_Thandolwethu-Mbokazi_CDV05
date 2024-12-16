@@ -285,16 +285,48 @@ This handles the little paragraphs on the page  */
     font-size: 4rem;
     margin-top: 80px;
     margin-bottom: 0px;
+    text-decoration: underline;
 }
 
 .project-Desc {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--mainColorWhite);
+    width: 500px;
 }
 
 .gitHubRepo {
     color: var(--mainColorWhite);
 }
+
+/* Project-1  */
+
+.project-1 {
+    display: flex;
+    margin: 50px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.project-1-title {
+    margin-left: auto;
+    margin-right: 300px;
+    font-size: 2.8rem;
+    font-family: var(--fontCoustard);
+    color: var(--mainColorOrange);
+}
+
+.project-1-paragraph {
+    width: 500px;
+    font-size: 1.2rem;
+    color: var(--mainColorWhite);
+}
+
+.project-1-img {
+    margin-right: 20px;
+}
+
+/* Project-2 */
+/* Project-3 */
 
 
 /* footer section  */
