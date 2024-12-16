@@ -294,9 +294,30 @@ This handles the little paragraphs on the page  */
     width: 500px;
 }
 
-.gitHubRepo {
-    color: var(--mainColorWhite);
+/* button for github repo */
+
+.gitBtn {
+    display: flex;
+    justify-content: center;
 }
+
+.gitHubRepo {
+    background-color: var(--mainColorOrange);
+    border: none;
+    border-radius: 50px;
+    font-family: var(--fontCoustard);
+    font-size: 1.5rem;
+    color: var(--mainColorWhite);
+    width: 150px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gitHubRepo:hover {
+    background-color: coral;
+}
+
 
 /* Project-1  */
 
@@ -353,6 +374,33 @@ This handles the little paragraphs on the page  */
 }
 
 /* Project-3 */
+
+.project-3 {
+    display: flex;
+    margin: 50px;
+    margin-top: 100px;
+}
+
+.project-3-title {
+    margin-left: auto;
+    margin-right: 300px;
+    font-size: 2.8rem;
+    font-family: var(--fontCoustard);
+    color: var(--mainColorOrange);
+
+}
+
+.project-3-paragraph {
+    width: 500px;
+    font-size: 1.2rem;
+    color: var(--mainColorWhite);
+}
+
+.project-3-img {
+    margin-right: 20px;
+}
+
+
 
 
 /* footer section  */
