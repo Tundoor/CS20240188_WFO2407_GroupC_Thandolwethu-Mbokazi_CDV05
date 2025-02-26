@@ -1,7 +1,7 @@
 :root {
     --fontCoustard: "Coustard", serif;
-    --mainColorGreen: #55692d;
-    --mainColorOrange: rgb(255, 151, 55);
+    --mainColorGreen: #130017;
+    --mainColorOrange: rgb(152, 0, 152);
     --mainColorBlack: rgb(39, 39, 39);
     --mainColorWhite: rgb(248, 234, 212);
 }
@@ -39,8 +39,8 @@ body {
     width: 100vw;
     height: 70px;
     border-bottom-style: solid;
-    border-color: rgb(58, 83, 11);
-    box-shadow: 1px 10px 20px rgb(84, 90, 72);
+    border-color: rgb(158, 24, 135);
+    box-shadow: 1px 10px 20px rgb(197, 41, 155);
     z-index: 10;
 
 
@@ -94,7 +94,7 @@ body {
 }
 
 #CV:hover {
-    background-color: rgb(255, 136, 0);
+    background-color: rgb(197, 41, 155);
     color: var(--mainColorBlack);
     transition: background-color 0.3s, color, 0.3s;
 }
@@ -104,7 +104,7 @@ body {
 .aboutMe {
     background-color: var(--mainColorGreen);
     position: relative;
-    height: 700px;
+    height: 800px;
     width: 100vw;
     display: flex;
 
@@ -131,15 +131,15 @@ body {
 }
 
 /* quoted words  */
-.Quote {
+/* .Quote {
     position: absolute;
     background-color: rgb(255, 44, 44);
     box-shadow: 10px 10px 20px rgb(44, 63, 8);
     height: 100px;
     width: 300px;
     z-index: 9;
-    right: 120px;
-    top: 500px;
+    right: 5%;
+    top: 54%;
     padding: 10px;
 }
 
@@ -148,13 +148,13 @@ body {
     color: var(--mainColorWhite);
     font-family: cursive;
     font-size: 1rem;
-}
+} */
 
 
 /* 
 This handles the little paragraphs on the page  */
 .aboutMeRight {
-    margin-left: 120px;
+    margin-left: 100px;
 }
 
 .nameTitle {
@@ -167,7 +167,7 @@ This handles the little paragraphs on the page  */
     font-family: var(--fontCoustard);
     font-size: 1.0em;
     color: var(--mainColorWhite);
-    width: 400px;
+    width: 500px;
 }
 
 .jobTitles {
@@ -175,24 +175,69 @@ This handles the little paragraphs on the page  */
     color: var(--mainColorOrange);
 }
 
+/* Pictures */
+
 .pictureDiv {
     max-width: 100%;
-    margin: auto;
-    margin-right: 200px;
+    margin-bottom: 50px;
+    margin-right: 150px;
 }
 
-
-.profilePic {
+.profilePic-1 {
     max-width: 100%;
     width: 350px;
-    height: 400px;
-    max-width: 100%;
+    height: 350px;
     border-style: solid;
     border-color: var(--mainColorOrange);
     border-width: 5px;
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
-    box-shadow: 10px 10px 20px rgb(44, 63, 8);
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px rgb(197, 41, 155);
+    position: absolute;
+    left: 45%;
+    top: 15%;
+    margin-left: 70px;
+    z-index: 2;
+}
+
+.profilePic-2 {
+    position: absolute;
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-color: var(--mainColorOrange);
+    border-width: 5px;
+    border-radius: 100%;
+    box-shadow: 10px 10px 20px rgb(197, 41, 155);
+    left: 61%;
+    top: 52%;
+    z-index: 3;
+
+}
+
+.profilePic-3 {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    border-style: solid;
+    border-color: var(--mainColorOrange);
+    border-width: 5px;
+    border-radius: 100%;
+    box-shadow: 10px 10px 20px rgb(197, 41, 155);
+    z-index: 3;
+    position: absolute;
+    left: 73%;
+    top: 30%;
+}
+
+.div-1 {
+    position: absolute;
+    background-color: rgb(197, 41, 155);
+    border-radius: 100%;
+    width: 450px;
+    height: 450px;
+    right: 9%;
+    top: 22%;
 }
 
 /* skills section  */
@@ -200,7 +245,7 @@ This handles the little paragraphs on the page  */
 .skill-Intro {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 700px;
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -249,7 +294,7 @@ This handles the little paragraphs on the page  */
     padding: 40px;
     padding-top: 50px;
     background-color: var(--mainColorGreen);
-    box-shadow: 5px 10px 10px rgb(44, 63, 8);
+    box-shadow: 5px 10px 10px rgb(197, 41, 155);
 }
 
 .skill h3 {
@@ -291,7 +336,7 @@ This handles the little paragraphs on the page  */
 .project-Desc {
     font-size: 1.5rem;
     color: var(--mainColorWhite);
-    width: 500px;
+    width: 700px;
 }
 
 /* button for github repo */
@@ -315,7 +360,8 @@ This handles the little paragraphs on the page  */
 }
 
 .gitHubRepo:hover {
-    background-color: coral;
+    background-color: rgb(199, 30, 171);
+    box-shadow: 0 0 15px 10px rgb(254, 144, 225);
 }
 
 
@@ -475,7 +521,7 @@ footer {
 
 @media screen and (max-width: 1000px) {
     body {
-        max-width: 100vw;
+        max-width: 100%;
     }
 
 
@@ -506,7 +552,7 @@ footer {
     .aboutMe {
         background-color: var(--mainColorGreen);
         position: relative;
-        height: 600px;
+        height: 700px;
         width: 100vw;
         display: flex;
         overflow: hidden;
@@ -554,7 +600,20 @@ footer {
         padding-right: 10px;
     }
 
+    .cvSmall {
+        display: block;
+        width: 120px;
+        height: 50px;
+        font-family: var(--fontCoustard);
+        border-color: var(--mainColorOrange);
+        background-color: var(--mainColorOrange);
+        color: var(--mainColorWhite);
+        position: relative;
+        top: 270px;
+        right: 200px;
 
+
+    }
 
 
     .Quote {
@@ -570,22 +629,25 @@ footer {
     }
 
 
+    /* Skill section */
     .skill-Intro {
-        width: 300px;
+        width: 600px;
         margin-top: 50px;
 
     }
 
     .skill-details {
         gap: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin-left: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3;
+
     }
 
     .skill {
-        width: 90vw;
+        width: 340px;
+        height: 450px;
         margin-left: 0;
     }
 
@@ -593,7 +655,7 @@ footer {
         font-family: var(--fontCoustard);
         color: var(--mainColorBlack);
         font-size: 1.2rem;
-        margin-top: -30px;
+        margin-top: -10px;
         margin-left: 30px;
         margin-bottom: 80px;
     }
@@ -605,14 +667,16 @@ footer {
     }
 
     .skill h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 900;
     }
 
     .skill p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 300;
     }
+
+    /* Project Section */
 
     .project-Title {
         font-size: 3rem;
@@ -621,14 +685,35 @@ footer {
     }
 
     .project-Desc {
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: var(--mainColorWhite);
+        width: 500px;
     }
 
-    .carousel {
-        height: 600px;
-        width: 100vw;
+    .project-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .project-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-info {
+        margin-left: 100px;
+        margin-bottom: 50px;
+    }
+
+
 
     svg {
         width: 50px;
@@ -638,30 +723,21 @@ footer {
         margin: 0;
     }
 
-    .cvSmall {
-        display: block;
-        width: 120px;
-        height: 50px;
-        font-family: var(--fontCoustard);
-        border-color: var(--mainColorOrange);
-        background-color: var(--mainColorOrange);
-        color: var(--mainColorWhite);
-        position: relative;
-        top: 200px;
-        right: 200px;
 
 
-    }
+
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     .cvSmall {
         display: none;
     }
 
     .nav-bar {
+        display: flex;
         justify-content: end;
+
     }
 
 
@@ -694,13 +770,34 @@ footer {
     }
 
     .nameParagraph {
+        font-size: 0.7rem;
+    }
+
+    /* Skill section */
+
+    .skill-title {
+        font-size: 1.5rem;
+    }
+
+    .skill-paragraph {
         font-size: 1rem;
     }
 
-    .carousel-button {
-        width: 50px;
-        height: 50px;
-        font-size: 2rem;
+    .skill-Intro {
+        width: 300px;
+        margin-right: 50px;
+    }
+
+    .skill-details {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .skill {
+        width: 250px;
+        height: 350px;
+        margin-left: 0;
     }
 
 
@@ -714,6 +811,8 @@ footer {
         font-weight: 300;
     }
 
+
+    /*Nav-Bar Section */
 
     .hamburger-modal {
         display: none;
@@ -743,7 +842,61 @@ footer {
     }
 
 
+    /* Pojects */
 
+    .project-Title {
+        font-size: 2rem;
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+
+    .project-Desc {
+        font-size: 1rem;
+        color: var(--mainColorWhite);
+        width: 300px;
+    }
+
+    .project-1,
+    .project-2,
+    .project-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .project-1-title,
+    .project-2-title,
+    .project-3-title {
+        font-size: 1.5rem;
+        width: 250px;
+    }
+
+    .project-1-paragraph,
+    .project-2-paragraph,
+    .project-3-paragraph {
+        font-size: 1rem;
+        width: 250px;
+    }
+
+    .project-1-img,
+    .project-2-img,
+    .project-3-img {
+        display: block;
+        /* Ensure visibility */
+        max-width: 100%;
+        /* Make them responsive */
+        height: auto;
+    }
+
+    #img-3-CBL,
+    #img-3-KTM,
+    #img-3-VL {
+        display: none;
+    }
 
 
 }
