@@ -447,11 +447,25 @@ This handles the little paragraphs on the page  */
 /* footer section  */
 
 .footer {
-    background: var(--mainColorOrange);
+    background-color: var(--mainColorGreen);
     color: var(--mainColorGreen);
-    text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
+}
+
+#copywrite-hr {
+    height: 5px;
+    background-color: var(--mainColorOrange);
+    border-style: none;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#contactMe-hr {
+    height: 5px;
+    background-color: var(--mainColorOrange);
+    border-style: none;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -459,29 +473,7 @@ footer {
     margin-bottom: -100%;
 }
 
-.footer a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.footer_link {
-    font-family: var(--fontCoustard);
-    font-weight: 700;
-}
-
-.footer__link:hover,
-.social-list__link:hover {
-    opacity: .7;
-
-}
-
-.footer__link:hover {
-    text-decoration: underline;
-}
-
-
 .social-list {
-    color: #55692d;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -495,6 +487,12 @@ footer {
 
 .social-list__link {
     padding: .5em;
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+    opacity: .7;
+
 }
 
 .cvSmall {
@@ -513,7 +511,13 @@ footer {
     display: none;
 }
 
-@media screen and (max-width:) {
+.copywrite {
+    margin-left: 30px;
+    margin-top: 50px;
+    color: var(--mainColorWhite);
+}
+
+@media screen and (max-width: 1200px) {
 
     body {
         margin: 0;
